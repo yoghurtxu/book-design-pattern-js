@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ea8a011-a214-4a07-8ab2-910e387ce821" name="Default Changelist" comment="" />
+    <list default="true" id="6ea8a011-a214-4a07-8ab2-910e387ce821" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/04-单例模式/4.html" beforeDir="false" afterPath="$PROJECT_DIR$/04-单例模式/4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-策略模式/5.html" beforeDir="false" afterPath="$PROJECT_DIR$/05-策略模式/5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08-发布-订阅模式/8.html" beforeDir="false" afterPath="$PROJECT_DIR$/08-发布-订阅模式/8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12-享元模式/12.html" beforeDir="false" afterPath="$PROJECT_DIR$/12-享元模式/12.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -13,9 +18,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/05-策略模式/5.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-857">
+              <caret line="25" column="22" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/08-发布-订阅模式/8.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1809">
+              <caret line="78" column="28" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/1/1.1.html">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/12-享元模式/12.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="95" column="4" selection-start-line="95" selection-start-column="4" selection-end-line="95" selection-end-column="4" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -31,6 +58,8 @@
     <findStrings>
       <find>aler</find>
       <find>loginBtn</find>
+      <find>策略模式</find>
+      <find>82 第5 章 策略模式</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -60,11 +89,14 @@
         <option value="$PROJECT_DIR$/03-闭包和高阶函数/3.2.js" />
         <option value="$PROJECT_DIR$/03-闭包和高阶函数/3.2.html" />
         <option value="$PROJECT_DIR$/04-单例模式/4.html" />
+        <option value="$PROJECT_DIR$/05-策略模式/5.html" />
+        <option value="$PROJECT_DIR$/08-发布-订阅模式/8.html" />
+        <option value="$PROJECT_DIR$/12-享元模式/12.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="54" />
+    <option name="x" value="-48" />
     <option name="y" value="23" />
     <option name="width" value="1602" />
     <option name="height" value="877" />
@@ -88,7 +120,32 @@
             <path>
               <item name="book-design-pattern-js" type="b2602c69:ProjectViewProjectNode" />
               <item name="book-design-pattern-js" type="462c0819:PsiDirectoryNode" />
-              <item name="1" type="462c0819:PsiDirectoryNode" />
+              <item name="04-单例模式" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book-design-pattern-js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book-design-pattern-js" type="462c0819:PsiDirectoryNode" />
+              <item name="05-策略模式" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book-design-pattern-js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book-design-pattern-js" type="462c0819:PsiDirectoryNode" />
+              <item name="08-发布-订阅模式" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book-design-pattern-js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book-design-pattern-js" type="462c0819:PsiDirectoryNode" />
+              <item name="09-命令模式" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book-design-pattern-js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book-design-pattern-js" type="462c0819:PsiDirectoryNode" />
+              <item name="12-享元模式" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book-design-pattern-js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book-design-pattern-js" type="462c0819:PsiDirectoryNode" />
+              <item name="13-职责链模式" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -120,17 +177,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.1.1.html">
+  <component name="RunManager" selected="JavaScript Debug.12.html">
+    <configuration name="12.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/book-design-pattern-js/12-享元模式/12.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="1.1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/book-design-pattern-js/1/1.1.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="4.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/book-design-pattern-js/04-单例模式/4.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="3.1.0.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="3.1.0.js" working-dir="$PROJECT_DIR$/03-闭包和高阶函数">
-      <method v="2" />
-    </configuration>
-    <configuration name="3.1.1.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="3.1.1.js" working-dir="$PROJECT_DIR$/03-闭包和高阶函数">
+    <configuration name="5.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/book-design-pattern-js/05-策略模式/5.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="3.1.2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="3.1.2.js" working-dir="$PROJECT_DIR$/03-闭包和高阶函数">
@@ -138,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.1.1.html" />
+        <item itemvalue="JavaScript Debug.12.html" />
+        <item itemvalue="JavaScript Debug.5.html" />
         <item itemvalue="JavaScript Debug.4.html" />
+        <item itemvalue="JavaScript Debug.1.1.html" />
         <item itemvalue="Node.js.3.1.2.js" />
-        <item itemvalue="Node.js.3.1.1.js" />
-        <item itemvalue="Node.js.3.1.0.js" />
       </list>
     </recent_temporary>
   </component>
@@ -158,31 +215,31 @@
       <updated>1574074478797</updated>
       <workItem from="1574074479973" duration="510000" />
       <workItem from="1574835517162" duration="1574000" />
-      <workItem from="1574838792782" duration="1209000" />
+      <workItem from="1574838792782" duration="1847000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3293000" />
+    <option name="totallyTimeSpent" value="3931000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="139" y="23" width="1602" height="877" extended-state="0" />
+    <frame x="-48" y="23" width="1602" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2538071" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15545686" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24020888" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.7101828" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.07832898" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.49347258" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="LuaCheck" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.049608354" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.1762402" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -224,7 +281,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01-面向对象的javascript/1.2.1.html" />
+    <entry file="file://$PROJECT_DIR$/01-面向对象的JavaScript/1.2.1.html" />
     <entry file="file://$PROJECT_DIR$/01-面向对象的javascript/1.1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
@@ -232,7 +289,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01-面向对象的javascript/1.2.2.html" />
+    <entry file="file://$PROJECT_DIR$/01-面向对象的JavaScript/1.2.2.html" />
     <entry file="file://$PROJECT_DIR$/01-面向对象的javascript/1.2.2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="409">
@@ -268,7 +325,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01-面向对象的javascript/1.4.2.html" />
+    <entry file="file://$PROJECT_DIR$/01-面向对象的JavaScript/1.4.2.html" />
     <entry file="file://$PROJECT_DIR$/01-面向对象的javascript/1.4.2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
@@ -366,22 +423,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/1/1.1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="36">
+            <caret line="2" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/04-单例模式/4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1740">
-          <caret line="140" column="33" lean-forward="true" selection-start-line="140" selection-start-column="33" selection-end-line="140" selection-end-column="33" />
+        <state relative-caret-position="138">
+          <caret line="233" column="6" lean-forward="true" selection-start-line="233" selection-start-column="6" selection-end-line="233" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/05-策略模式/5.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="110" column="10" lean-forward="true" selection-start-line="110" selection-start-column="10" selection-end-line="110" selection-end-column="10" />
+        <state relative-caret-position="-857">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1/1.1.html">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/08-发布-订阅模式/8.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1809">
+          <caret line="78" column="28" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-享元模式/12.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="95" column="4" selection-start-line="95" selection-start-column="4" selection-end-line="95" selection-end-column="4" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

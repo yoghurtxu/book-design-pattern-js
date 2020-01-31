@@ -4,6 +4,8 @@
         this.name = name;
         this.instance = null;
     };
+
+    // Singleton.instance = null;
     
     Singleton.prototype.getName = function () {
         alert(this.name);
@@ -15,9 +17,7 @@
         return this.instance;
     };
 
-    var a = Singleton.getInstance('sven1');
-    var b = Singleton.getInstance('sven2');
-    alert(a === b); // true
+    
 
     //或者：
     var Singleton = function (name) {
@@ -27,16 +27,24 @@
         alert(this.name);
     };
     Singleton.getInstance = (function () {
+        
         var instance = null;
+        // 这边执行一次
         return function (name) {
             if (!instance) {
                 instance = new Singleton(name);
             }
+        // 这边执行两次
             return instance;
         }
     })();
 
-    var CreateDiv = (function () {
+
+    var a = Singleton.getInstance('sven1');
+    var b = Singleton.getInstance('sven2');
+    alert(a === b); // true
+    
+    /* var CreateDiv = (function () {
         var instance;
         var CreateDiv = function (html) {
             if (instance) {
@@ -124,7 +132,7 @@
             }
             return instance;
         }
-    })();
+    })(); */
 
 </script>
 
@@ -148,7 +156,7 @@
 </html>
 
 
-<html>
+<!-- <html>
 <body>
 <button id="loginBtn">登录</button>
 </body>
@@ -257,4 +265,4 @@
     render();
     render();
 
-</script>
+</script> -->

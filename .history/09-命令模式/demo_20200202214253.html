@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button id="button1">点击按钮1</button>
+	<script>
+		var button1 = document.getElementById( 'button1' );
+
+		var setCommand = function( button, command ){
+			button.onclick = function(){
+				command.execute();
+			}
+		};
+
+		var MenuBar = {
+			refresh: function(){
+				console.log( '刷新菜单目录' );
+			}
+		};
+		// 在让button 变得有用起来之前，我们要先把这些行为都封装在命令类中：
+		var RefreshMenuBarCommand = function( receiver ){
+            debugger
+			this.receiver = receiver;
+
+		};
+		RefreshMenuBarCommand.prototype.execute = function(){
+			this.receiver.refresh();
+		};
+
+		var refreshMenuBarCommand = new RefreshMenuBarCommand( MenuBar );
+
+		setCommand( button1, refreshMenuBarCommand );
+	</script>
+
+
+	<!-- <script type="text/javascript">
+		var bindClick = function( button, func ){
+			button.onclick = func;
+		};
+		var MenuBar = {
+			refresh: function(){
+				console.log( '刷新菜单界面' );
+			}
+		};
+		bindClick( button1, MenuBar.refresh );
+
+		var setCommand = function( button, func ){
+			button.onclick = function(){
+				func();
+			}
+		};
+		var MenuBar = {
+			refresh: function(){
+				console.log( '刷新菜单界面' );
+			}
+		};
+		var RefreshMenuBarCommand = function( receiver ){
+			return function(){
+				receiver.refresh();
+			}
+		};
+		var refreshMenuBarCommand = RefreshMenuBarCommand( MenuBar );
+		setCommand( button1, refreshMenuBarCommand );
+
+
+		var RefreshMenuBarCommand = function( receiver ){
+			return {
+				execute: function(){
+					receiver.refresh();
+				}
+			}
+		};
+		var setCommand = function( button, command ){
+			button.onclick = function(){
+				command.execute();
+			}
+		};
+		var refreshMenuBarCommand = RefreshMenuBarCommand( MenuBar );
+		setCommand( button1, refreshMenuBarCommand );
+	</script> -->
+
+</body>
+</html>

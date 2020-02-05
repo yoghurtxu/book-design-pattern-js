@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        	var mult = function(){
+		console.log( '开始计算乘积' );
+		var a = 1;
+		for ( var i = 0, l = arguments.length; i < l; i++ ){
+			a = a * arguments[i];
+		}
+		return a;
+	};
+	mult( 2, 3 ); // 输出：6
+	mult( 2, 3, 4 ); // 输出：24
+	//现在加入缓存代理函数：
+
+	var proxyMult = (function(){
+		var cache = {};
+		return function(){
+            // console.log(this)，this执行Window对象
+			var args = Array.prototype.join.call( this,arguments, ',' );
+            debugger
+			if ( args in cache ){
+				return cache[ args ];
+			}
+            // 第二次调用不会执行到这里，上面的循环直接return
+            console.log(this)
+			return cache[ args ] = mult.apply(  null,arguments );
+		}
+	})();
+
+console.log(proxyMult( 1, 2, 3, 4 ))	 // 输出：24
+console.log(proxyMult( 1, 2, 3, 4 )) // 输出：24
+    </script>
+</body>
+</html>

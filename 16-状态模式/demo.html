@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 继承
+        var State = function () { };
+        State.prototype.buttonWasPressed = function () {
+            throw new Error('父类的buttonWasPressed 方法必须被重写');
+        };
+        var SuperStrongLightState = function (light) {
+            this.light = light;
+        };
+
+        SuperStrongLightState.prototype = new State(); // 继承抽象父类
+        SuperStrongLightState.prototype.buttonWasPressed = function () { // 重写buttonWasPressed 方法
+            console.log('关灯');
+            this.light.setState(this.light.offLightState);
+        };
+        var superItem = new SuperStrongLightState()
+        superItem.buttonWasPressed()
+
+
+
+        //    - 继承 ts写法,这边没有配置ts，编译不了
+         /*   abstract  class Father {
+            constructor() {
+          
+            }
+            abstract fn():void;
+          }
+          
+          class Son extends Father {
+            constructor() {
+              super()
+            }
+            fn(){
+              console.log(5)
+            }
+          
+          }
+          var s = new Son();
+          s.fn() */
+          
+
+    </script>
+</body>
+
+</html>
